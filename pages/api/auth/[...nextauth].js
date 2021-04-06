@@ -51,9 +51,6 @@ export default NextAuth({
       scope: "full_name email vatsim_details country",
       params: {
         grant_type: "authorization_code",
-        // client_id: process.env.VATSIM_ID,
-        // client_secret: process.env.VATSIM_SECRET,
-        // redirect_uri: `${process.env.NEXTAUTH_URL}/api/auth/callback/vatsim-connect-dev`,
       },
       authorizationParams: {
         client_id: process.env.VATSIM_ID,
